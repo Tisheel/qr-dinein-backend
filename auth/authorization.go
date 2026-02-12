@@ -33,7 +33,7 @@ var rolePermissions = map[string]RolePermissions{
 	},
 	"superuser": {
 		Resources: map[string]Permission{
-			"restaurants-global": {Methods: map[string]bool{"GET": true, "PUT": true}},
+			"restaurants-global": {Methods: map[string]bool{"GET": true, "POST": true, "PUT": true}},
 			"restaurants":        {Methods: map[string]bool{"GET": true, "POST": true, "PUT": true, "DELETE": true}},
 			"categories":         {Methods: map[string]bool{"GET": true, "POST": true, "PUT": true, "DELETE": true}},
 			"products":           {Methods: map[string]bool{"GET": true, "POST": true, "PUT": true, "DELETE": true}},
